@@ -53,7 +53,7 @@ const verDetalles = async (id) => {
 
 async function filtroPersonaje(nombre) {
   try {
-    const response = await fetch(urlDragonBall); // Cargamos todos los personajes
+    const response = await fetch(urlDragonBall);
     if (!response.ok) throw new Error("No se conectó con la API");
 
     const data = await response.json();
