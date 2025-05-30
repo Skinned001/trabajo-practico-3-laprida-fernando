@@ -7,36 +7,50 @@
     <link rel="stylesheet" href="assets/css/style.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous" />
-    <title>Dragonbolseta</title>
+    <title>DragonBz API</title>
 </head>
 
-<body>
-    <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom"> <a href="/"
+<body class="bg-light">
+    <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom"> <h1 
             class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none"> <svg
                 class="bi me-2" width="40" height="32" aria-hidden="true">
-                <use xlink:href="#bootstrap"></use>
-            </svg> <span class="fs-4"> Buscador de personajes DB Z y demas</span> </a>
+            </svg> <span class="fs-4"> Buscador de personajes DB Z y demas</span> </h1>
     </header>
 
-
-<nav class="navbar navbar-light bg-light">
+<nav class="navbar text-center navbar-light bg-light">
   <form class="form-inline">
-    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    <input class="form-control mr-sm-2" type="search" placeholder="Busqueda" aria-label="Search">
+    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
+    <button id="btn-limpiar" class="btn btn-outline-success my-2 my-sm-0" type="submit">Limpiar</button>
   </form>
 </nav>
 
-
-
-
-
+    <div class="container text-center">
+      <button id="btn-buscar" class="btn btn-primary mt-4">MOSTRAR TODOS</button>
+      <div id="contenedor-data" class="row">
+        <!-- ACA SE AGREGAN LOS DATOS CON JAVASCRIPT -->
+        <!-- CADA CARTA  -->
+        <!-- <div class="col-3 pb-2 d-flex justify-content-center">
+          <div class="card">
+            <img
+              class="card-img-top"
+              src="https://dragonball-api.com/characters/goku_normal.webp"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Goku</h5>
+              <p class="card-text">Saiyan - Male</p>
+            </div>
+          </div>
+        </div> -->
+      </div>
+    </div>
 
 
     <!-- scripts -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
         crossorigin="anonymous"></script>
-    <script src="script.js"></script>
+    <script src="assets/js/script.js"></script>
 </body>
 
 </html>
