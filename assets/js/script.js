@@ -3,6 +3,13 @@
 const btnBuscar = document.getElementById("btn-buscar");
 const contenedorPadre = document.getElementById("contenedor-data");
 const urlDragonBall = "https://dragonball-api.com/api/characters?limit=58";
+const btnFiltro = document.getElementById("btn-filtro").value;
+
+function filtroBusqueda() {
+  var x = document.getElementById("myText").value;
+  document.getElementById("demo").innerHTML = x;
+}
+
 
 
 const cargarDatos = async (url) => {
@@ -40,7 +47,7 @@ const verDetalles = async (id) => {
   }
 };
 
-// para dragon ball
+
 btnBuscar.addEventListener("click", async () => {
   const data = await cargarDatos(urlDragonBall);
   const dataPersonajes = data.items;
@@ -48,7 +55,7 @@ btnBuscar.addEventListener("click", async () => {
   console.log(dataPersonajes);
 
   dataPersonajes.forEach((personaje) => {
- 
+   
     contenedorPadre.innerHTML += `
           <div class="col-3 pb-2 d-flex justify-content-center" data-id=${personaje.id}>
             <div class="card">
